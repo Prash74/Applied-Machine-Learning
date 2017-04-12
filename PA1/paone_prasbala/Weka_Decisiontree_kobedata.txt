@@ -1,0 +1,103 @@
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+J48 pruned tree
+------------------
+
+action_type = Jump Shot
+|   shot_zone_range = 8-16 ft.
+|   |   shot_zone_basic = Mid-Range
+|   |   |   shot_zone_area = Left Side(L)
+|   |   |   |   minutes_remaining <= 0: P (3.0)
+|   |   |   |   minutes_remaining > 0: N (51.0/12.0)
+|   |   |   shot_zone_area = Right Side Center(RC): N (0.0)
+|   |   |   shot_zone_area = Center(C)
+|   |   |   |   matchup = Away
+|   |   |   |   |   minutes_remaining <= 7: P (5.0/1.0)
+|   |   |   |   |   minutes_remaining > 7: N (2.0)
+|   |   |   |   matchup = Home: N (4.0/1.0)
+|   |   |   shot_zone_area = Left Side Center(LC): N (0.0)
+|   |   |   shot_zone_area = Right Side(R)
+|   |   |   |   period <= 1
+|   |   |   |   |   minutes_remaining <= 0: N (2.0)
+|   |   |   |   |   minutes_remaining > 0: P (13.0/3.0)
+|   |   |   |   period > 1: N (31.0/10.0)
+|   |   |   shot_zone_area = Back Court(BC): N (0.0)
+|   |   shot_zone_basic = In The Paint (Non-RA)
+|   |   |   shot_zone_area = Left Side(L): P (9.0/3.0)
+|   |   |   shot_zone_area = Right Side Center(RC): P (0.0)
+|   |   |   shot_zone_area = Center(C): N (32.0/13.0)
+|   |   |   shot_zone_area = Left Side Center(LC): P (0.0)
+|   |   |   shot_zone_area = Right Side(R): P (5.0)
+|   |   |   shot_zone_area = Back Court(BC): P (0.0)
+|   |   shot_zone_basic = Above the Break 3: N (0.0)
+|   |   shot_zone_basic = Restricted Area: N (0.0)
+|   |   shot_zone_basic = Right Corner 3: N (0.0)
+|   |   shot_zone_basic = Backcourt: N (0.0)
+|   |   shot_zone_basic = Left Corner 3: N (0.0)
+|   shot_zone_range = 16-24 ft.
+|   |   minutes_remaining <= 0: N (32.0/6.0)
+|   |   minutes_remaining > 0
+|   |   |   matchup = Away
+|   |   |   |   shot_zone_area = Left Side(L): N (15.0/6.0)
+|   |   |   |   shot_zone_area = Right Side Center(RC): P (23.0/7.0)
+|   |   |   |   shot_zone_area = Center(C): P (10.0/4.0)
+|   |   |   |   shot_zone_area = Left Side Center(LC): N (23.0/9.0)
+|   |   |   |   shot_zone_area = Right Side(R): N (19.0/9.0)
+|   |   |   |   shot_zone_area = Back Court(BC): P (0.0)
+|   |   |   matchup = Home: N (128.0/54.0)
+|   shot_zone_range = 24+ ft.
+|   |   shot_zone_basic = Mid-Range: N (0.0)
+|   |   shot_zone_basic = In The Paint (Non-RA): N (0.0)
+|   |   shot_zone_basic = Above the Break 3: N (113.0/37.0)
+|   |   shot_zone_basic = Restricted Area: N (0.0)
+|   |   shot_zone_basic = Right Corner 3
+|   |   |   minutes_remaining <= 8: N (7.0/2.0)
+|   |   |   minutes_remaining > 8: P (3.0)
+|   |   shot_zone_basic = Backcourt: N (0.0)
+|   |   shot_zone_basic = Left Corner 3
+|   |   |   period <= 3: P (3.0)
+|   |   |   period > 3: N (3.0/1.0)
+|   shot_zone_range = Less Than 8 ft.: N (50.0/10.0)
+|   shot_zone_range = Back Court Shot: N (4.0)
+action_type = Running Jump Shot: P (61.0/10.0)
+action_type = Layup Shot
+|   matchup = Away
+|   |   minutes_remaining <= 0: N (3.0)
+|   |   minutes_remaining > 0
+|   |   |   period <= 3: P (19.0/6.0)
+|   |   |   period > 3: N (6.0/2.0)
+|   matchup = Home: N (28.0/12.0)
+action_type = Reverse Dunk Shot: P (3.0/1.0)
+action_type = Driving Layup Shot: P (64.0/22.0)
+action_type = Slam Dunk Shot: P (28.0/1.0)
+action_type = Reverse Layup Shot
+|   matchup = Away: P (5.0)
+|   matchup = Home: N (7.0/1.0)
+action_type = Tip Shot
+|   minutes_remaining <= 0: P (2.0)
+|   minutes_remaining > 0
+|   |   period <= 1: N (3.0)
+|   |   period > 1: P (3.0/1.0)
+action_type = Dunk Shot
+|   matchup = Away: P (6.0)
+|   matchup = Home
+|   |   minutes_remaining <= 7: N (2.0)
+|   |   minutes_remaining > 7: P (2.0)
+action_type = Turnaround Jump Shot: P (31.0/5.0)
+action_type = Running Dunk Shot: N (1.0)
+action_type = Driving Dunk Shot: P (13.0/1.0)
+action_type = Alley Oop Layup shot
+|   matchup = Away: P (3.0)
+|   matchup = Home: N (3.0/1.0)
+action_type = Running Layup Shot: N (1.0)
+action_type = Finger Roll Shot: N (1.0)
+action_type = Running Hook Shot: P (1.0)
+action_type = Alley Oop Dunk Shot: P (11.0)
+action_type = Driving Finger Roll Shot: P (3.0)
+
+Number of Leaves  : 	67
+
+Size of the tree : 	92
